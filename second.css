@@ -3,6 +3,7 @@
 *::after{
     box-sizing: border-box;
 }
+
 .logo{
     font-size: 20px;
     background-image: url("Photo/590x300-OO0122993-Greem-wooden-abstract-background-design-vector.jpg");
@@ -23,8 +24,6 @@
  .ferd{
      margin-top: 10px;
      vertical-align: middle;
-     justify-content: center !important;
-     height: 350px;
      margin-bottom: 20px;
    
  }
@@ -63,13 +62,12 @@ strong{
     padding: 0;
     color: white;
     background-color: black;
-    background-image: url("Photo/header.png");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgIq6gdEoJqwZAyLpI0OCjE9AGh6L1yx4n9Q&usqp=CAU");
     background-size: cover;
-
-    
+   
 }
-.intro .header_image{
-   display: flex;
+.intro img{
+    position: relative;
     height: 250px;
     width: 250px;
     /* z-index: 1; */
@@ -79,7 +77,6 @@ strong{
 /* all the information in the about me section  */
  .Aguwa{
      background-color: lightgray;
-     height: 200px;
      display: flex;
      padding-top: 25px;
      justify-content: center;
@@ -99,26 +96,40 @@ text-align: center;
 
 
 
-@media screen and (max-width: 600px) {
-    .intro {
-      display: grid;
-      grid-column-gap: 1em;
-      width: min-content;
-      margin: 0;
-      grid-template-areas:
-        'first_header_style'
-        'second_header_style';
-      grid-template-columns: min-content max-content;
-      left: 25%;
-      right: 50%;
+@media(min-width: 600px){
+    .intro{
+        display: grid;
+        grid-column-gap: 1em ;
+        width: min-content;
+        margin: 0;
+        grid-template-areas:
+        "first_header_style"
+        "second_header_style";
+        grid-template-columns: min-content max-content;
+         left: 25%;
+        right: 50%;
+
     }
-  
-    .second_header_style {
-      align-self: start;
-      grid-row: 2;
-      text-align: left;
-      position: absolute;
-      bottom: 10px;
-      width: 110%;
-    }
+    
+   .second_header_style{
+       align-self: start;
+       grid-row: 2;
+       text-align: left;
+       position: absolute;
+       bottom: 10px;
+       width: 110%;
+   }
+
+   .photo1{
+       display: flex;
+       flex-direction: row;
+   }
+   .myServices{
+       margin-left: 10px;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       
+
+   }
  }
