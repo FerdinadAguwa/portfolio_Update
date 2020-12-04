@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+.logo{
+    font-size: 20px;
+    background-image: url("Photo/590x300-OO0122993-Greem-wooden-abstract-background-design-vector.jpg");
+    height: 500px;
+    font-family: Asul;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nameItem{
+    z-index: 1;
+    color: white;
+    font-size: 30px;
+}
+/* firstSection intro class styling */
+ .ferd{
+     margin-top: 10px;
+     vertical-align: middle;
+     justify-content: center !important;
+     height: 350px;
+     margin-bottom: 20px;
+   
+ }
+
+.first_header_style{
+    font-weight: 1;
+    font-size: 35px;
+}
+strong{
+    font-weight: bold;
+}
+.first_header_style strong{
+    display: block;
+    color: rgb(170, 163, 163);
+}
+.second_header_style{
+    background: linear-gradient(90deg, #ffee06, rgb(11, 99, 105), rgb(26, 148, 150));
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;  
+    
+}
+
+.intro{
+    position: relative;
+    margin-top: 10px;
+    padding-top: 20px;  
+}
+
+.photo1{
+    width: 100%;
+    padding: 0;
+}
+.photo{
+    padding: 0;
+    color: white;
+    background-color: black;
+    background-image: url("Photo/header.png");
+    background-size: cover;
+
+    
+}
+.intro img{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    /* z-index: 1; */
+    border: 1px solid rgb(184, 182, 182);
+}
+
+/* all the information in the about me section  */
+ .Aguwa{
+     background-color: lightgray;
+     height: 200px;
+     display: flex;
+     padding-top: 25px;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 15px;
+ }
+.aboutMe{
+
+padding-right: 35px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+  
+
+
+
+
+@media(min-width: 600px){
+    .intro{
+        display: grid;
+        grid-column-gap: 1em ;
+        width: min-content;
+        margin: 0;
+        grid-template-areas:
+        "first_header_style"
+        "second_header_style";
+        grid-template-columns: min-content max-content;
+         left: 25%;
+        right: 50%;
+
+    }
+    
+   .second_header_style{
+       align-self: start;
+       grid-row: 2;
+       text-align: left;
+       position: absolute;
+       bottom: 10px;
+       width: 110%;
+   }
+
+ }
