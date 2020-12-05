@@ -3,7 +3,9 @@
 *::after{
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 
 /* page start image and text */
 .logo{
@@ -159,8 +161,28 @@ text-align: center;
     margin-bottom: 200px;
 }
 
+/* contact sesction  */
+.contact{
 
 
+border: 20px solid;
+    border-image-source: url(https://i.pinimg.com/originals/e7/ba/f3/e7baf3a159072cb2580a394230415e43.jpg);
+    border-image-slice: 60 30;
+}
+
+.mail{
+    display: flex;
+
+ 
+
+}
+.mailPicture{
+    height: 50px;
+    align-items: flex-end;
+    
+
+    
+}
 
 @media(min-width: 600px){
     .intro{
@@ -200,7 +222,7 @@ text-align: center;
    }
    .serviceHeader{
       text-align: center;
-      margin: 30px;
+      margin: 40px;
     text-decoration: underline;
  }
  .myWork{
